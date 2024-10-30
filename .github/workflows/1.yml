@@ -21,6 +21,10 @@ jobs:
 
       - name: check java version
         run: java -version
-      - name: gradle build
-        run: gradle build
+      #- name: gradle build
+      #  run: gradle build
+      - name: docker version
+        run: |
+          docker -v
+          docker
       
