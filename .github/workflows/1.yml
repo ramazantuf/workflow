@@ -27,4 +27,7 @@ jobs:
         run: |
           docker -v
           docker
+          docker images -a
+      - name: docker build
+        run: docker build . -t demo-kotlin2.0
       
