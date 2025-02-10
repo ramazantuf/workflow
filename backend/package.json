@@ -7,5 +7,9 @@
   },
   "author": "ramazantuf",
   "license": "GPL-3.0-or-later",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql": "^2.18.1"
+  }
 }
