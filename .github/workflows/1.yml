@@ -28,6 +28,6 @@ jobs:
           docker -v
           docker
           docker images -a
-      - name: docker build
-        run: docker build . -t demo-kotlin2.0
+      - name: docker compose
+        run: docker-compose up -d
       
