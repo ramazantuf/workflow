@@ -35,6 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: actions/checkout@v3
       - name: backend kurulumu
         run: |
           docker build -t gh-backend ./backend
