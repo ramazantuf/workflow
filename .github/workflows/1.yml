@@ -29,5 +29,9 @@ jobs:
           docker
           docker images -a
       - name: docker compose
-        run: docker-compose up -d
+        run: |
+          docker build -t gh-mysql ./mysql
+          docker build -t gh-backend ./backend
+          docker build -t gh-frontend ./frontend
+          docker build -t gh-nginx ./nginx
       
