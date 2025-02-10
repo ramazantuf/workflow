@@ -38,6 +38,5 @@ jobs:
           docker build -t gh-backend ./backend
           docker build -t gh-frontend ./frontend
           docker build -t gh-nginx ./nginx
-        run:|
           
       
