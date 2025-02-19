@@ -41,7 +41,7 @@ jobs:
           docker build -t gh-backend ./backend
   frontend:
     runs-on: ubuntu-latest
-    needs: build
+    needs: nginx
     steps:
       - uses: actions/checkout@v3
       - name: frontend kurulumu
