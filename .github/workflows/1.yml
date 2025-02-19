@@ -33,7 +33,7 @@ jobs:
   
   backend:
     runs-on: ubuntu-latest
-    needs: build
+    needs: nginx
     steps:
       - uses: actions/checkout@v3
       - name: backend kurulumu
